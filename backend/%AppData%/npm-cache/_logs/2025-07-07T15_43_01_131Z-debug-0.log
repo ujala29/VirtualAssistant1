@@ -1,0 +1,164 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\91854\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.2.0
+2 info using node@v22.13.1
+3 silly config load:file:C:\Users\91854\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\91854\Documents\developmentbyaanya\project\virtualasistance\backend\.npmrc
+5 silly config load:file:C:\Users\91854\.npmrc
+6 silly config load:file:C:\Users\91854\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install moment
+8 verbose argv "install" "moment"
+9 verbose logfile logs-max:10 dir:C:\Users\91854\Documents\developmentbyaanya\project\virtualasistance\backend\%AppData%\npm-cache\_logs\2025-07-07T15_43_01_131Z-
+10 verbose logfile C:\Users\91854\Documents\developmentbyaanya\project\virtualasistance\backend\%AppData%\npm-cache\_logs\2025-07-07T15_43_01_131Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest moment@*
+16 silly packumentCache full:https://registry.npmjs.org/moment cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/moment 661ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/moment set size:undefined disposed:false
+19 silly placeDep ROOT moment@2.30.1 OK for: backend@1.0.0 want: *
+20 silly reify moves {}
+21 silly audit bulk request {
+21 silly audit   '@mongodb-js/saslprep': [ '1.3.0' ],
+21 silly audit   '@types/webidl-conversions': [ '7.0.3' ],
+21 silly audit   '@types/whatwg-url': [ '11.0.5' ],
+21 silly audit   accepts: [ '2.0.0' ],
+21 silly audit   'append-field': [ '1.0.0' ],
+21 silly audit   asynckit: [ '0.4.0' ],
+21 silly audit   axios: [ '1.10.0' ],
+21 silly audit   bcrypt: [ '6.0.0' ],
+21 silly audit   'body-parser': [ '2.2.0' ],
+21 silly audit   bson: [ '6.10.4' ],
+21 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+21 silly audit   'buffer-from': [ '1.1.2' ],
+21 silly audit   busboy: [ '1.6.0' ],
+21 silly audit   bytes: [ '3.1.2' ],
+21 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+21 silly audit   'call-bound': [ '1.0.4' ],
+21 silly audit   cloudinary: [ '2.7.0' ],
+21 silly audit   'combined-stream': [ '1.0.8' ],
+21 silly audit   'concat-stream': [ '2.0.0' ],
+21 silly audit   'content-disposition': [ '1.0.0' ],
+21 silly audit   'content-type': [ '1.0.5' ],
+21 silly audit   cookie: [ '0.7.2' ],
+21 silly audit   'cookie-parser': [ '1.4.7' ],
+21 silly audit   'cookie-signature': [ '1.0.6', '1.2.2' ],
+21 silly audit   cors: [ '2.8.5' ],
+21 silly audit   debug: [ '4.4.1' ],
+21 silly audit   'delayed-stream': [ '1.0.0' ],
+21 silly audit   depd: [ '2.0.0' ],
+21 silly audit   dotenv: [ '17.0.1' ],
+21 silly audit   'dunder-proto': [ '1.0.1' ],
+21 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+21 silly audit   'ee-first': [ '1.1.1' ],
+21 silly audit   encodeurl: [ '2.0.0' ],
+21 silly audit   'es-define-property': [ '1.0.1' ],
+21 silly audit   'es-errors': [ '1.3.0' ],
+21 silly audit   'es-object-atoms': [ '1.1.1' ],
+21 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+21 silly audit   'escape-html': [ '1.0.3' ],
+21 silly audit   etag: [ '1.8.1' ],
+21 silly audit   express: [ '5.1.0' ],
+21 silly audit   finalhandler: [ '2.1.0' ],
+21 silly audit   'follow-redirects': [ '1.15.9' ],
+21 silly audit   'form-data': [ '4.0.3' ],
+21 silly audit   'mime-db': [ '1.52.0', '1.54.0' ],
+21 silly audit   'mime-types': [ '2.1.35', '3.0.1' ],
+21 silly audit   forwarded: [ '0.2.0' ],
+21 silly audit   fresh: [ '2.0.0' ],
+21 silly audit   'function-bind': [ '1.1.2' ],
+21 silly audit   'get-intrinsic': [ '1.3.0' ],
+21 silly audit   'get-proto': [ '1.0.1' ],
+21 silly audit   gopd: [ '1.2.0' ],
+21 silly audit   'has-symbols': [ '1.1.0' ],
+21 silly audit   'has-tostringtag': [ '1.0.2' ],
+21 silly audit   hasown: [ '2.0.2' ],
+21 silly audit   'http-errors': [ '2.0.0' ],
+21 silly audit   statuses: [ '2.0.1', '2.0.2' ],
+21 silly audit   'iconv-lite': [ '0.6.3' ],
+21 silly audit   inherits: [ '2.0.4' ],
+21 silly audit   'ipaddr.js': [ '1.9.1' ],
+21 silly audit   'is-promise': [ '4.0.0' ],
+21 silly audit   jsonwebtoken: [ '9.0.2' ],
+21 silly audit   jwa: [ '1.4.2' ],
+21 silly audit   jws: [ '3.2.2' ],
+21 silly audit   kareem: [ '2.6.3' ],
+21 silly audit   lodash: [ '4.17.21' ],
+21 silly audit   'lodash.includes': [ '4.3.0' ],
+21 silly audit   'lodash.isboolean': [ '3.0.3' ],
+21 silly audit   'lodash.isinteger': [ '4.0.4' ],
+21 silly audit   'lodash.isnumber': [ '3.0.3' ],
+21 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+21 silly audit   'lodash.isstring': [ '4.0.1' ],
+21 silly audit   'lodash.once': [ '4.1.1' ],
+21 silly audit   'math-intrinsics': [ '1.1.0' ],
+21 silly audit   'media-typer': [ '1.1.0', '0.3.0' ],
+21 silly audit   'memory-pager': [ '1.5.0' ],
+21 silly audit   'merge-descriptors': [ '2.0.0' ],
+21 silly audit   minimist: [ '1.2.8' ],
+21 silly audit   mkdirp: [ '0.5.6' ],
+21 silly audit   mongodb: [ '6.17.0' ],
+21 silly audit   'mongodb-connection-string-url': [ '3.0.2' ],
+21 silly audit   mongoose: [ '8.16.1' ],
+21 silly audit   mpath: [ '0.9.0' ],
+21 silly audit   mquery: [ '5.0.0' ],
+21 silly audit   ms: [ '2.1.3' ],
+21 silly audit   multer: [ '2.0.1' ],
+21 silly audit   'type-is': [ '1.6.18', '2.0.1' ],
+21 silly audit   negotiator: [ '1.0.0' ],
+21 silly audit   'node-addon-api': [ '8.4.0' ],
+21 silly audit   'node-gyp-build': [ '4.8.4' ],
+21 silly audit   'object-assign': [ '4.1.1' ],
+21 silly audit   'object-inspect': [ '1.13.4' ],
+21 silly audit   'on-finished': [ '2.4.1' ],
+21 silly audit   once: [ '1.4.0' ],
+21 silly audit   parseurl: [ '1.3.3' ],
+21 silly audit   'path-to-regexp': [ '8.2.0' ],
+21 silly audit   'proxy-addr': [ '2.0.7' ],
+21 silly audit   'proxy-from-env': [ '1.1.0' ],
+21 silly audit   punycode: [ '2.3.1' ],
+21 silly audit   q: [ '1.5.1' ],
+21 silly audit   qs: [ '6.14.0' ],
+21 silly audit   'range-parser': [ '1.2.1' ],
+21 silly audit   'raw-body': [ '3.0.0' ],
+21 silly audit   'readable-stream': [ '3.6.2' ],
+21 silly audit   router: [ '2.2.0' ],
+21 silly audit   'safe-buffer': [ '5.2.1' ],
+21 silly audit   'safer-buffer': [ '2.1.2' ],
+21 silly audit   semver: [ '7.7.2' ],
+21 silly audit   send: [ '1.2.0' ],
+21 silly audit   'serve-static': [ '2.2.0' ],
+21 silly audit   setprototypeof: [ '1.2.0' ],
+21 silly audit   'side-channel': [ '1.1.0' ],
+21 silly audit   'side-channel-list': [ '1.0.0' ],
+21 silly audit   'side-channel-map': [ '1.0.1' ],
+21 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+21 silly audit   sift: [ '17.1.3' ],
+21 silly audit   'sparse-bitfield': [ '3.0.3' ],
+21 silly audit   streamsearch: [ '1.1.0' ],
+21 silly audit   string_decoder: [ '1.3.0' ],
+21 silly audit   toidentifier: [ '1.0.1' ],
+21 silly audit   tr46: [ '5.1.1' ],
+21 silly audit   typedarray: [ '0.0.6' ],
+21 silly audit   unpipe: [ '1.0.0' ],
+21 silly audit   'util-deprecate': [ '1.0.2' ],
+21 silly audit   vary: [ '1.1.2' ],
+21 silly audit   'webidl-conversions': [ '7.0.0' ],
+21 silly audit   'whatwg-url': [ '14.2.0' ],
+21 silly audit   wrappy: [ '1.0.2' ],
+21 silly audit   xtend: [ '4.0.2' ],
+21 silly audit   moment: [ '2.30.1' ]
+21 silly audit }
+22 http cache moment@https://registry.npmjs.org/moment/-/moment-2.30.1.tgz 0ms (cache hit)
+23 silly tarball no local data for moment@https://registry.npmjs.org/moment/-/moment-2.30.1.tgz. Extracting by manifest.
+24 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 384ms
+25 silly audit report {}
+26 http fetch GET 200 https://registry.npmjs.org/moment/-/moment-2.30.1.tgz 2342ms (cache miss)
+27 silly ADD node_modules/moment
+28 verbose cwd C:\Users\91854\Documents\developmentbyaanya\project\virtualasistance\backend
+29 verbose os Windows_NT 10.0.26100
+30 verbose node v22.13.1
+31 verbose npm  v11.2.0
+32 verbose exit 0
+33 info ok
