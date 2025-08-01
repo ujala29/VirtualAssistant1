@@ -36,3 +36,6 @@ A customizable virtual assistant built with the MERN stack that integrates the *
    ```bash
    git clone https://github.com/your-username/virtual-assistant-ai.git
    cd virtual-assistant-ai
+
+```bash
+Watch the video here: https://youtu.be/mx5Y0T5Vas8
