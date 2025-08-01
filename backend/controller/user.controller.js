@@ -30,7 +30,7 @@ export const updateAssistant = async (req, res) => {
 
     if (req.file) {
       const normalizedPath = path.resolve(req.file.path);
-      assistantimage = await uploadonCloudinary(normalizedPath);
+      assistantimage = await uploadonCloudinary(normalizedPath); // yha pe uploadonCloudinary function se image upload ho rha hai
     } else {
       assistantimage = imageUrl;
     }

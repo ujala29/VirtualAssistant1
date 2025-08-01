@@ -31,7 +31,7 @@ const Customize2 = () => {
         withCredentials: true,
       });
 
-      console.log(result.data);
+      // console.log(result.data);
       setUserData(result.data);
       navigate('/');
     } catch (error) {

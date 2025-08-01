@@ -29,7 +29,9 @@ const Customize = () => {
     const file = e.target.files[0];
     if (file) {
       setbackendImage(file);
+      // save the image to backend
       setfrontedImage(URL.createObjectURL(file));
+      // create a URL for the image to display it on frontend 
     }
   };
 

@@ -18,6 +18,8 @@ app.use(cors({
   origin: 'http://localhost:5173', // frontend URL
   credentials: true               // ✅ this allows cookies
 }));
+
+
 app.use('/api/v1/auth', AuthRouter);
 app.use('/api/v1/user', UserRouter);
 
@@ -36,6 +38,7 @@ app.get('/', async (req, res) => {
     return res.status(500).json({ message: 'Internal server error' });
   }
 });
+
 
 
 app.listen(PORT, () => {

@@ -22,6 +22,7 @@ const Login = () => {
 }, {
   withCredentials: true // ✅ VERY IMPORTANT
 });
+//"Please send (or allow receiving) cookies with this request." with Crentials true ka mtlb
      setUserData(response.data)
       toast.success('Login successful!');
       navigate('/');

@@ -15,6 +15,8 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
 
+    //If you don’t use e.preventDefault() inside handleSubmit, the browser will automatically reload the page when the form is submitted.
+
     try {
       const response = await axios.post(`${serverUrl}/api/v1/auth/signup`, {
         name,

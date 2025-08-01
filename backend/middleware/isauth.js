@@ -20,3 +20,6 @@ export const isAuth = (req, res, next) => {
     return res.status(500).json({ message: "Invalid token" });
   }
 }
+
+
+//This middleware checks if a valid JWT token exists in the cookies. If valid, it lets the request continue and adds the user’s ID (req.userId). If not, it blocks the request with an appropriate error message.
