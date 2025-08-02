@@ -15,9 +15,13 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: 'https://virtualassistant1-cj5z.onrender.com', // frontend URL
-  credentials: true               // ✅ this allows cookies
+  origin: [
+    'http://localhost:5173', // dev
+    'https://virtualassistant1-1.onrender.com' // deployed frontend
+  ],
+  credentials: true
 }));
+
 
 
 app.use('/api/v1/auth', AuthRouter);
