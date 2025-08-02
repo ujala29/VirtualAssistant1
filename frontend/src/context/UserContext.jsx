@@ -3,7 +3,7 @@ import UserDataContext from './UserDataContext';
 import axios from 'axios';
 
 const UserContext = ({ children }) => {
-  const serverUrl = "http://localhost:3000";
+  const serverUrl = "https://virtualassistant1-cj5z.onrender.com";
 
 
   const [userData, setUserData] = useState(null);
