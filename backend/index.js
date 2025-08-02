@@ -21,7 +21,7 @@ app.use(cors({
   ],
   credentials: true
 }));
-
+//sm
 
 
 app.use('/api/v1/auth', AuthRouter);
