@@ -25,8 +25,8 @@ export const signup = async (req, res) => {
         const token = await genToken(user._id);
 res.cookie('virtualToken', token, {
     httpOnly: true,
-    secure: false,             // ✅ use false for localhost
-    sameSite: 'Lax',           // ✅ allows cross-origin cookies
+    secure: true,             // ✅ use false for localhost
+    sameSite: 'None',           // ✅ allows cross-origin cookies
     maxAge: 10 * 24 * 60 * 60 * 1000
 });
 // console.log("Cookie set:", token);
@@ -68,8 +68,8 @@ export const login = async (req, res) => {
     const token = await genToken(existingUser._id);
    res.cookie('virtualToken', token, {
     httpOnly: true,
-    secure: false,             // ✅ use false for localhost
-    sameSite: 'Lax',           // ✅ allows cross-origin cookies
+    secure: true,             // ✅ use false for localhost
+    sameSite: 'None',           // ✅ allows cross-origin cookies
     maxAge: 10 * 24 * 60 * 60 * 1000
 });
 // console.log("Cookie set:", token);
