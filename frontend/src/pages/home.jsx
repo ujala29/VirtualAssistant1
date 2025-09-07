@@ -638,7 +638,10 @@ const Home = () => {
 
   return (
     <div className='relative w-full h-[100vh] bg-gradient-to-t from-black to-[#030353] flex justify-center items-center flex-col p-[20px] gap-[20px]'>
-
+  {/* ✅ Instruction Note */}
+  <p className="text-white text-sm absolute top-[150px] left-1/2 transform -translate-x-1/2 text-center">
+    ⚡ Note: The assistant will listen only when you include its name.
+  </p>
       {/* ✅ Logout */}
       <button
         className="min-w-[150px] h-[60px] text-black font-semibold bg-white rounded-full text-[15px] absolute top-[20px] right-[20px]"
