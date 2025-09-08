@@ -679,33 +679,33 @@ const Home = () => {
 
       {/* ✅ Text Mode Input */}
       {textMode && (
-        <div className='flex flex-col gap-2 items-center'>
-          <input
-            type="text"
-            value={textInput}
-            onChange={(e) => setTextInput(e.target.value)}
-            placeholder="Ask me anything..."
-            className="w-[300px] p-3 rounded"
-          />
-          <button
-            onClick={handleTextSubmit}
-            className={`bg-white text-black px-4 py-2 rounded ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
-            disabled={loading}
-          >
-            {loading ? "Thinking..." : "Submit"}
-          </button>
-          {loading && (
-            <p className="text-white text-sm mt-2 max-w-[300px] text-center">
-              🤖 I am processing your request...
-            </p>
-          )}
-          {!loading && textResponse && (
-            <p className="text-white text-sm mt-2 max-w-[300px] text-center">
-              {textResponse}
-            </p>
-          )}
-        </div>
-      )}
+  <div className='flex flex-col gap-2 items-center absolute bottom-[120px]'>
+    <input
+      type="text"
+      value={textInput}
+      onChange={(e) => setTextInput(e.target.value)}
+      placeholder="Ask me anything..."
+      className="w-[300px] p-3 rounded"
+    />
+    <button
+      onClick={handleTextSubmit}
+      className={`bg-white text-black px-4 py-2 rounded ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
+      disabled={loading}
+    >
+      {loading ? "Thinking..." : "Submit"}
+    </button>
+    {loading && (
+      <p className="text-white text-sm mt-2 max-w-[300px] text-center">
+        🤖 I am processing your request...
+      </p>
+    )}
+    {!loading && textResponse && (
+      <p className="text-white text-sm mt-2 max-w-[300px] text-center">
+        {textResponse}
+      </p>
+    )}
+  </div>
+)}
     </div>
   );
 };
