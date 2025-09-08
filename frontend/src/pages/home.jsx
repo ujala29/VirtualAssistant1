@@ -157,11 +157,11 @@ return (
   <div className='relative w-full h-[100vh] bg-gradient-to-t from-black to-[#030353] flex flex-col'>
 
     {/* ✅ Header Note */}
-    <div className="w-full text-center fixed top-0 left-0 bg-[#030353] py-3 shadow-md z-10">
+{/*     <div className="w-full text-center fixed top-0 left-0 bg-[#030353] py-3 shadow-md z-10">
       <p className="text-white text-sm">
         ⚡ Note: The assistant will listen only when you include its name.
       </p>
-    </div>
+    </div> */}
 
     {/* ✅ Logout */}
     <button
