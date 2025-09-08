@@ -153,24 +153,51 @@ const Home = () => {
     setLoading(false); // End loader
   };
 
- return (
-  <div className='relative w-full h-[100vh] bg-gradient-to-t from-black to-[#030353] flex flex-col items-center p-[20px] gap-[20px]'>
-    
+return (
+  <div className='relative w-full h-[100vh] bg-gradient-to-t from-black to-[#030353] flex flex-col'>
+
     {/* ✅ Header Note */}
-    <div className="w-full text-center fixed top-0 left-0 bg-transparent py-4">
+    <div className="w-full text-center fixed top-0 left-0 bg-[#030353] py-3 shadow-md z-10">
       <p className="text-white text-sm">
         ⚡ Note: The assistant will listen only when you include its name.
       </p>
     </div>
 
-    {/* ✅ Add padding so avatar doesn’t clash with note */}
-    <div className="flex flex-col items-center justify-center flex-grow pt-[80px]">
+    {/* ✅ Logout */}
+    <button
+      className="min-w-[150px] h-[60px] text-black font-semibold bg-white rounded-full text-[15px] absolute top-[20px] right-[20px]"
+      onClick={handleLogout}>
+      Logout
+    </button>
+
+    {/* ✅ Customize */}
+    <button
+      className="min-w-[170px] h-[60px] text-black font-semibold bg-white rounded-full text-[15px] absolute top-[100px] right-[20px]"
+      onClick={() => navigate("/customize")}>
+      Customize your assistant
+    </button>
+
+    {/* ✅ Toggle */}
+    <div className="absolute top-[180px] right-[20px]">
+      <label className='text-white mr-2'>Mode:</label>
+      <select
+        value={textMode ? "text" : "voice"}
+        onChange={(e) => setTextMode(e.target.value === "text")}
+        className="p-2 rounded">
+        <option value="voice">Voice</option>
+        <option value="text">Text</option>
+      </select>
+    </div>
+
+    {/* ✅ Main Content with padding for header */}
+    <div className="flex flex-col items-center justify-center flex-grow pt-[100px] gap-[20px]">
+      
       {/* ✅ Assistant Card */}
       <div className='w-[300px] h-[400px] flex justify-center items-center overflow-hidden rounded-3xl shadow-lg'>
         <img src={userData?.assistantimage} alt="image" className='h-full object-cover' />
       </div>
 
-      <h1 className='text-white text-[19px] font-semibold mt-4'>
+      <h1 className='text-white text-[19px] font-semibold'>
         I'm {userData.assistantname}
       </h1>
 
