@@ -8,7 +8,7 @@ import axios from 'axios';
 const Home = () => {
   const { userData, serverUrl, setUserData, geminiResponse } = useContext(userDataContext);
   const navigate = useNavigate();
-
+//
   const recognitionRef = useRef(null);
   const isRunningRef = useRef(false);
 
